@@ -1,0 +1,188 @@
+/* FONTES DA APLICAÇÃO */
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Anton+SC&family=Audiowide&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=League+Spartan:wght@100..900&family=Orbitron:wght@400..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Afacad Flux, sans serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    /* Cores */
+    --primaryColor: #ffd33b;
+    --TertiaryColor: #0a0a0a;
+
+    --blackColor: #000000;
+    --whiteColor: #ffffff;
+
+    /* Fontes */
+    --fontAnton: Anton SC, serif;
+    --fontAfacad: Afacad Flux, sans-serif;
+}
+
+.headerLayout{
+    width: 100%;
+    height: 75px;
+    background-color: var(--primaryColor);
+}
+
+.mainLayout{
+    width: 100%;
+    height: 200vh;
+    position: relative;
+}
+
+.footerLayout{
+    width: 100%;
+    height: 180vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    background-color: var(--blackColor);
+    position: relative;
+}
+
+.socialFooter{
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--primaryColor);
+}
+
+.socialFooter h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: var(--fontAnton);
+}
+
+.socialFooter div{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.socialFooter .footerIcons{
+    width: 1.8rem;
+    transition: all 0.3s;
+}
+
+.footerIcons:hover, .footerIcons:active{
+    transform: rotate(25deg);
+}
+
+.sumaryFooter{
+    width: 100%;
+    height: 65vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: start;
+    place-items: center;
+    gap: 0.5rem;
+    padding: 1.2rem;
+    color: var(--whiteColor);
+}
+
+.sumaryFooter .sumaryColumn{
+    width: 50%;
+    height: 75%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.sumaryFooter .sumaryColumn h4{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.sumaryColumn ul{
+    width: 80%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sumaryColumn ul li{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.copyFooter{
+    width: 100%;
+    height: 35rem;
+    background-color: var(--TertiaryColor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.copyFooter .credits{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.copyFooter div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.copyFooter .credits h3{
+    color: var(--whiteColor);
+    font-family: var(--fontAfacad);
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.copyFooter .credits hr{
+    width: 150%;
+    height: 2px;
+    border: 1px solid var(--blackColor);
+}
+
+.copyFooter h2{
+    color: var(--whiteColor);
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: var(--fontAfacad);
+    letter-spacing: 1.5px;
+}
+
+.copyFooter section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.copyFooter section h4{
+    font-size: 16rem;
+    color: var(--primaryColor);
+    font-family: var(--fontAnton);
+    white-space: no-wrap;
+    /* position: absolute;
+    bottom: -20%; */
+    line-height: 15rem;
+}
