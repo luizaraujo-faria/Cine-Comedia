@@ -1,14 +1,4 @@
 /* FONTES DA APLICAÇÃO */
-@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Anton+SC&family=Audiowide&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=League+Spartan:wght@100..900&family=Orbitron:wght@400..900&display=swap');
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Afacad Flux, sans serif;
-    list-style: none;
-    text-decoration: none;
-}
 
 :root{
     /* Cores */

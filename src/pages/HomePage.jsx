@@ -6,7 +6,7 @@ const HomePage = ({ icons }) => {
        <Header />
        <main className="mainLayout">
 
-            <section style={{ width: '100%' }}>
+            <section className="w-full h-dvh bg-black">
             </section>
 
        </main>
