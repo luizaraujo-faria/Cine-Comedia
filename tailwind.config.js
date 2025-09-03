@@ -7,7 +7,7 @@ export default {
     extend: {
         colors: {
           primary: '#ffd33b',
-          secondary: '#0a0a0a'
+          secondary: '#111'
         },
         fontFamily: {
           anton: 'Anton SC, serif',

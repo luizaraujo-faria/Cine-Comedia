@@ -1,4 +1,3 @@
-import './styles/global.css';
 import { icons } from './assets/importAssets';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
