@@ -30,24 +30,28 @@ const MovieSlideshow = () => {
     }, []);
 
     return (
-        <div className="w-full mx-auto h-120 bg-secondary border rounded-sm overflow-hidden relative flex flex-col items-start justify-around p-5">
+        <div className="w-full h-140 bg-secondary border rounded-sm overflow-hidden relative flex flex-col items-start justify-around p-5 md:flex-row">
             {/* Imagem */}
-            <img src={slides[current].image} alt={slides[current].title} className="w-full h-52 bg-amber-200 object-cover"/>
-
-            {/* Conteúdo */}
-            <div>
-                <h2 className="text-lg text-white font-bold uppercase mb-2">{slides[current].title}</h2>
-                <p className="text-sm text-gray-300 mb-4">{slides[current].description}</p>
-
-                {/* Botão Read More */}
-                <a href={slides[current].link} className="inline-flex items-center text-base font-semibold text-white hover:underline">Saber mais<span className="ml-1">&rarr;</span></a>
+            <div className="w-2/4 md:h-full md:flex md:items-center md:justify-center">
+              <img src={slides[current].image} alt={slides[current].title} className="w-full h-70 bg-amber-200 object-cover md:h-3/4 lg:h-5/6 lg:w-3/4"/>
             </div>
 
-            {/* Paginação (bolinhas) */}
-            <div className="w-1/6 flex justify-start items-center space-x-2 pb-4">
-                {slides.map((_, index) => (
-                <button key={index} onClick={() => setCurrent(index)} className={`w-2 h-2 rounded-full ${current === index ? "bg-black" : "bg-primary"}`}/>
-                ))}
+            <div className="w-2/4 md:h-full md:flex md:mt-12 md:items-start md:justify-start md:flex-col md:p-5">
+              {/* Conteúdo */}
+              <div>
+                  <h2 className="text-lg text-white font-bold uppercase mb-2 md:text-2xl">{slides[current].title}</h2>
+                  <p className="text-sm text-gray-300 mb-4 md:text-lg">{slides[current].description}</p>
+
+                  {/* Botão Read More */}
+                  <a href={slides[current].link} className="inline-flex items-center text-base font-semibold text-white hover:underline md:text-xl">Saber mais<span className="ml-1">&rarr;</span></a>
+              </div>
+
+              {/* Paginação (bolinhas) */}
+              <div className="w-1/6 flex justify-start items-center space-x-2 pb-4">
+                  {slides.map((_, index) => (
+                  <button key={index} onClick={() => setCurrent(index)} className={`w-2 h-2 rounded-full md:size-3 ${current === index ? "bg-black" : "bg-primary"}`}/>
+                  ))}
+              </div>
             </div>
 
         </div>
