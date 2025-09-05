@@ -6,7 +6,9 @@ import Twitter from './icons/twitter.png';
 import Whatsapp from './icons/whatsapp.png';
 import Youtube from './icons/youtube.png';
 
-import Banner1 from './images/Banner-1.jpg';
+import Banner1 from './images/Banner-2.webp';
+import BannerGG from './images/Banner-GG.webp';
+import BannerAV from './images/Banner-AV.webp';
 
 export const icons = {
     Facebook,
@@ -19,5 +21,7 @@ export const icons = {
 }
 
 export const images = {
-    Banner1
+    Banner1,
+    BannerGG,
+    BannerAV
 }

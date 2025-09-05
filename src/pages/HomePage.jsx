@@ -3,6 +3,7 @@ import Header from "../components/layout/Header";
 import InfoCards from "../components/ui/InfoCards";
 import MovieSlideshow from "../components/ui/MovieSlideshow";
 import Slideshow from "../components/ui/Slideshow";
+import TopicDiv from "../components/ui/TopicDiv";
 
 const contentCardIntro = {
     title: 'Amante da comédia',
@@ -11,95 +12,43 @@ const contentCardIntro = {
 };
 
 const contentCardGen = {
-    title: 'Comédia',
+    title: 'A Comédia',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, numquam commodi reiciendis voluptates temporibus veniam, molestiae ea qui atque odio eum esse fugit autem voluptatem tempore fugiat tenetur beatae saepe?',
+    text2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, numquam commodi reiciendis voluptates temporibus veniam, molestiae ea qui atque odio eum esse fugit autem voluptatem tempore fugiat tenetur beatae saepe?',
     image: 'path_da_imagem'
 };
 
-const HomePage = ({ icons }) => {
+const HomePage = () => {
     
     return <>
 
-        <div className="flex flex-col gap-5 p-3 relative">
+        <div className="w-full flex flex-col gap-5 p-5 bg-gradient-to-b from-stone-900 from-5% to-transparent to-95% fixed z-20">
             <Header />
         </div>
         <main className="w-full h-fit relative">
 
-            <div className="flex flex-col gap-5 p-3 relative">
+            <div className="flex flex-col gap-5 relative">
                 <Slideshow />
             </div>
-                    
-
-            <div className="w-full h-18 flex justify-around items-center">
-                <hr className="w-1/4 h-px border-black bg-black"/>
-                <h4 className="text-2xl">CONFIRA</h4>
-                <hr className="w-1/4 h-px border-black bg-black"/>
-                </div>
                 
-            <section className="flex flex-col gap-5 p-3 relative">
-                <InfoCards content={contentCardIntro}/>
+            <section className="flex relative bg-center bg-cover bg-no-repeat" style={{ backgroundImage: "url('./assets/images/Wallpaper.webp')" }}>
+                <InfoCards content={contentCardIntro} className={'bg-neutral-100 text-black'}/>
             </section>
                     
+            <TopicDiv title={'GÊNERO'}/>
 
-            <div className="w-full h-28 flex justify-around items-center">
-                <hr className="w-1/4 h-px border-black bg-black"/>
-                <h4 className="text-2xl">GÊNERO</h4>
-                <hr className="w-1/4 h-px border-black bg-black"/>
-            </div>
-
-            <section id="genero" className="w-full h-fit bg-secondary flex flex-col items-center justify-start gap-5">
-                <InfoCards content={contentCardGen}/>
-
-                {/* <article className="w-full flex flex-col items-center justify-start gap-5">
-                    <h3 className="text-2xl text-primary font-anton"></h3>
-
-                    <div className="text-justify text-xl text-white flex flex-col gap-3">
-                        <p className="">
-                        </p>
-                        <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eius porro dignissimos doloremque, sapiente asperiores! Cumque distinctio harum, ea velit ipsum minima optio, maiores similique voluptates id saepe magnam error?
-                        </p>
-                        <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus magnam assumenda impedit.
-                        </p>
-                    </div>
-                </article>
-
-                <div className="w-full h-60 bg-amber-200">
-                    <img src="" alt="IMAGEM" />
-                </div>  */}
+            <section id="genero" className="w-full h-fit relative">
+                <InfoCards content={contentCardGen} className={'bg-neutral-100 text-black'}/>
             </section>
 
-            <div className="w-full h-16 flex justify-around items-center bg-primary">
-                <hr className="w-1/4 h-px border-black bg-black"/>
-                <h4 className="text-2xl">FILMES</h4>
-                <hr className="w-1/4 h-px border-black bg-black"/>
-            </div>
+            <TopicDiv title={'FILMES'}/>
 
-            <MovieSlideshow />
+            <section className="w-full h-fit flex flex-col items-center justify-start gap-5">
+                <MovieSlideshow />
+            </section>
 
-            {/* <section id="filmes" className="w-full h-fit bg-secondary flex flex-col items-center justify-start p-5 gap-5">
-
-                
-
-                <article className="w-full flex flex-col items-center justify-start gap-5">
-
-                    <div className="text-justify text-xl text-white flex flex-col gap-3">
-                        <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, numquam commodi reiciendis voluptates temporibus veniam, molestiae ea qui atque.
-                        </p>
-                    </div>
-                </article>
-
-                <div className="w-3/4 h-70 relative rounded-sm bg-white">
-
-                    <img src="" className="w-full h-full" alt="IMAGEM-FILME" />
-                </div>
-
-                <div className="w-3/4 h-70 relative rounded-sm bg-white">
-
-                    <img src="" className="w-full h-full" alt="IMAGEM-FILME" />
-                </div> 
-            </section> */}
         </main>
-        <Footer icons={icons}/>
+        <Footer/>
     </>
 }
 

@@ -1,4 +1,3 @@
-import { icons } from './assets/importAssets';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 
@@ -8,7 +7,7 @@ function App() {
     <>
     <Router>
       <Routes>
-        <Route path='/' element={<HomePage icons={icons} />} />
+        <Route path='/' element={<HomePage/>} />
       </Routes>
     </Router>
     </>

@@ -12,6 +12,9 @@ export default {
         fontFamily: {
           anton: 'Anton SC, serif',
           afacad: 'Afacad Flux, sans-serif'
+        },
+        backgroundImage: {
+          bannerDiv: "url('./assets/images/Banner-Div.webp')"
         }
     },
   },
