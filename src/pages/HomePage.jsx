@@ -15,7 +15,7 @@ const contentCardGen = {
     title: 'A Comédia',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, numquam commodi reiciendis voluptates temporibus veniam, molestiae ea qui atque odio eum esse fugit autem voluptatem tempore fugiat tenetur beatae saepe?',
     text2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, numquam commodi reiciendis voluptates temporibus veniam, molestiae ea qui atque odio eum esse fugit autem voluptatem tempore fugiat tenetur beatae saepe?',
-    image: 'path_da_imagem'
+    image: './assets/images/charlie.png'
 };
 
 const HomePage = () => {
@@ -31,14 +31,14 @@ const HomePage = () => {
                 <Slideshow />
             </div>
                 
-            <section className="flex relative bg-center bg-cover bg-no-repeat" style={{ backgroundImage: "url('./assets/images/Wallpaper.webp')" }}>
-                <InfoCards content={contentCardIntro} className={'bg-neutral-100 text-black'}/>
+            <section className="flex relative bg-center bg-fixed bg-cover bg-no-repeat" style={{ backgroundImage: "url('./assets/images/Wallpaper.webp')" }}>
+                <InfoCards content={contentCardIntro} className={' text-black'}/>
             </section>
                     
             <TopicDiv title={'GÊNERO'}/>
 
-            <section id="genero" className="w-full h-fit relative">
-                <InfoCards content={contentCardGen} className={'bg-neutral-100 text-black'}/>
+            <section id="genero" className="flex relative bg-center bg-fixed bg-cover bg-no-repeat" style={{ backgroundImage: "url('./assets/images/Wallpaper.webp')" }}>
+                <InfoCards content={contentCardGen} className={' text-black'}/>
             </section>
 
             <TopicDiv title={'FILMES'}/>

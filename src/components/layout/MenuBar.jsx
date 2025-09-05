@@ -20,7 +20,7 @@ const MenuBar = ({ className }) => {
 
   return (
     <aside className={`w-full h-screen transition-all duration-300 fixed z-40 left-0 top-0 bg-neutral-100 flex items-center justify-start flex-col gap-8 p-5 pt-6 shadow-[1px_1px_10px_] shadow-[#0f0f0f75] overflow-hidden overflow-y-scroll md:w-2/4 lg:w-2/6 dark:bg-white ${className}`}>
-      <header className={`w-full h-14 flex items center justify-end p-5 border-b-1 border-b-neutral-400 transition-all duration-300`}>
+      <header className={`w-full h-14 flex items center justify-end p-5 bg-primary transition-all duration-300`}>
         {/* <div className="flex items-center gap-2">
           <h4 className="text-primary text-lg font-light dark:text-black">Tema:</h4>
 

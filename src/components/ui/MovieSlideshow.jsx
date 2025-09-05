@@ -30,13 +30,13 @@ const MovieSlideshow = () => {
     }, []);
 
     return (
-        <div className="w-full h-140 bg-neutral-100 overflow-hidden relative flex flex-col items-start justify-around p-5 md:flex-row">
+        <div className="w-full h-140 overflow-hidden relative flex flex-col items-start justify-around p-5 md:flex-row xl:h-[80vh] bg-center bg-cover bg-fixed bg-no-repeat" style={{ backgroundImage: 'url("./assets/images/Wallpaper.webp")' }}>
             {/* Imagem */}
             <div className="w-2/4 md:w-2/5 md:h-full md:flex md:items-center md:justify-center overflow-hidden">
-              <img src={slides[current].image} alt={slides[current].title} className="w-full h-70 bg-amber-200 object-cover rounded-sm md:h-3/4 lg:h-5/6 lg:w-3/4"/>
+              <img src={slides[current].image} alt={slides[current].title} className="w-full h-70 bg-amber-200 object-cover rounded-sm md:h-3/4 lg:h-5/6 lg:w-3/4 xl:w-3/5"/>
             </div>
 
-            <div className="w-2/4 md:h-full md:flex md:mt-12 md:items-start md:justify-around md:flex-col md:p-5">
+            <div className="w-2/4 shadow-neutral-500 shadow-[2px_5px_10px] bg-[#fffffffa] md:h-full md:flex md:mt-12 md:items-start md:justify-around md:flex-col md:p-5 xl:w-2/5 xl:h-4/5">
               {/* Conteúdo */}
               <div>
                   <h3 className="text-lg text-primary font-bold uppercase mb-2 md:text-2xl lg:text-5xl">{slides[current].title}</h3>
