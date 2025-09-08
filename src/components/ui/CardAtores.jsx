@@ -15,9 +15,9 @@ const CardAtores = ({ atores }) => {
    };
 
    return (
-      <div className="relative w-full h-[70vh] flex items-center justify-center p-5 overflow-hidden">
+      <div className="relative w-full h-[70vh] flex items-center justify-center p-5 overflow-hidden 2xl:h-[50vh]">
 
-         <div className="w-full h-full pl-160 flex transition-transform duration-500 ease-in-out" style={{transform: `translateX(-${currentIndex * (100 / visibleCards)}%)`, width: `${(atores.length / visibleCards) * 100}%`,}}>
+         <div className="w-full h-full pl-160 flex transition-transform duration-500 ease-in-out 2xl:pl-60 2xl:w-3/5" style={{transform: `translateX(-${currentIndex * (100 / visibleCards)}%)`, width: `${(atores.length / visibleCards) * 100}%`,}}>
          {atores.map((ator, i) => (
 
             <div key={i} className="w-1/3 h-full flex-shrink-1 px-5">

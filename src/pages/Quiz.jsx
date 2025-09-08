@@ -56,7 +56,7 @@ const Quiz = () => {
         <Header page={'› Quiz'}/>
       </div>
 
-      <main className="w-full h-fit relative py-[130px] px-[50px] gap-[50px] flex flex-col">
+      <main className={`w-full ${gameStarted ? 'h-fit' : 'h-screen'} relative py-[130px] px-[50px] gap-[50px] flex flex-col`}>
         <section className="w-full h-fit flex flex-col items-center gap-5">
           <h1 className="text-center text-black afacad font-bold tracking-wider text-[35px]">Bem-vindo ao Quiz de imagens do Cine-Comédia!</h1>
           <h3 className="text-center text-gray-700 afacad font-light text-[20px]">Acerte qual imagem é de qual filme e veja sua pontuação final</h3>
@@ -87,7 +87,7 @@ const Quiz = () => {
 
             <div className="w-full h-fit flex flex-col items-center gap-3 lg:gap-8">
               <input type="text" placeholder="Digite sua resposta aqui" className=" w-[80%] h-[40px] border-2 border-gray-300 rounded-[5px] px-3 py-2 focus:outline-none focus:border-primary transition-colors duration-200 lg:w-[50%] lg:h-[65px] lg:text-[22px]" value={userAnswer} onChange={(e) => setUserAnswer(e.target.value)}/>
-              <input type="button" value="Próximo" className=" w-[40%] h-[40px] bg-primary text-black font-bold rounded-[10px] cursor-pointer hover:bg-secondary hover:text-primary transition-colors duration-200 lg:w-[20%] lg:text-[20px]" onClick={handleNext}/>
+              <input type="button" value="Próximo" className=" w-[40%] h-[40px] bg-primary text-black font-bold rounded-sm cursor-pointer hover:bg-secondary hover:text-primary transition-colors duration-200 lg:w-[20%] lg:h-12 lg:text-[20px]" onClick={handleNext}/>
             </div>
           </section>
         )}

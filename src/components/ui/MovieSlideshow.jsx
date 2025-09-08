@@ -31,16 +31,16 @@ const MovieSlideshow = () => {
     }, []);
 
     return (
-        <div className="w-full h-140 overflow-hidden relative flex flex-col items-start justify-around p-5 md:grid md:grid-cols-2 md:place-content-center xl:h-screen xl:w-[95%] 2xl:h-[80vh] bg-center bg-cover bg-fixed bg-no-repeat" style={{ backgroundImage: 'url("./assets/images/Wallpaper.webp")' }}>
+        <div className="w-full h-140 overflow-hidden relative flex flex-col items-start justify-around p-5 md:grid md:grid-cols-2 md:place-items-center xl:h-screen xl:w-[95%] 2xl:h-[80vh] bg-center bg-cover bg-fixed bg-no-repeat" style={{ backgroundImage: 'url("./assets/images/Wallpaper.webp")' }}>
 
-            <div className="w-2/4 md:w-full md:h-screen md:flex md:items-center md:justify-center overflow-hidden">
-              <img src={slides[current].image} alt={slides[current].title} className="w-full h-full shadow-neutral-500 shadow-[2px_5px_10px] bg-amber-200 object-cover rounded-sm md:h-3/4 lg:h-5/6 lg:w-3/4 xl:w-3/5"/>
+            <div className="w-2/4 md:w-full md:h-screen md:flex md:items-center md:justify-center overflow-hidde 2xl:w-fit 2xl:h-fit bg-pink-200">
+              <img src={slides[current].image} alt={slides[current].title} className="w-full shadow-neutral-500 shadow-[2px_5px_10px] bg-amber-200 object-cover rounded-sm md:h-3/4 lg:h-5/6 lg:w-3/4 xl:w-3/5 2xl:w-110 2xl:h-150"/>
             </div>
 
-            <div className="w-2/4 shadow-neutral-500 shadow-[2px_5px_10px] bg-[#fffffffa] md:h-screen md:flex md:mt-12 md:items-start md:justify-around md:flex-col md:p-5 xl:w-[95%] xl:h-4/5">
+            <div className="w-2/4 shadow-neutral-500 shadow-[2px_5px_10px] bg-[#fffffffa] md:h-screen md:flex md:mt-12 md:items-start md:justify-around md:flex-col md:p-5 xl:w-[95%] xl:h-3/5 xl:justify-between">
               <div>
                   <h3 className="text-lg text-primary font-bold uppercase mb-2 md:text-2xl lg:text-5xl">{slides[current].title}</h3>
-                  <p className="text-sm text-justify text-neutral-600 mb-4 md:text-lg lg:text-xl">{slides[current].description}</p>
+                  <p className="text-sm text-justify text-neutral-600 mb-4 md:text-lg lg:text-xl 2xl:text-2xl">{slides[current].description}</p>
 
                   <Link to={slides[current].link} className="inline-flex items-center gap-2 text-base font-light text-black transition-all duration-300 hover:gap-3 hover:font-normal hover:text-primary md:text-xl lg:text-2xl">Saber mais<span className="ml-1">&rarr;</span></Link>
               </div>
