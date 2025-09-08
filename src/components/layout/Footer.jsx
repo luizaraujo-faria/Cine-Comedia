@@ -17,7 +17,7 @@ const Footer = () => {
     };
 
     return <footer className="w-full h-fit bg-secondary relative flex flex-col items-center justify-start gap-8 overflow-hidden">
-        <div className="w-full h-10 bg-primary flex items-center justify-between p-1">
+        <div className="w-full h-6 bg-primary flex items-center justify-between p-1">
             {/* <h4 className='text-xl font-anton'>Nossas redes</h4>
 
             <div className='flex gap-2'>

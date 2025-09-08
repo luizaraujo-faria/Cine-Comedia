@@ -13,9 +13,9 @@ const contentCardIntro = {
 
 const contentCardGen = {
     title: 'A Comédia',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, numquam commodi reiciendis voluptates temporibus veniam, molestiae ea qui atque odio eum esse fugit autem voluptatem tempore fugiat tenetur beatae saepe?',
-    text2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, numquam commodi reiciendis voluptates temporibus veniam, molestiae ea qui atque odio eum esse fugit autem voluptatem tempore fugiat tenetur beatae saepe?',
-    image: './assets/images/charlie.png'
+    text: 'Comédia é um gênero de ficção, presente em diversas formas de arte como no teatro, cinema, televisão, livros, entre outros. Onde o objetivo desse gênero é divertir o público e induzir ao riso, mas também foi bastante usada para criticar os costumes da sociedade.',
+    text2: 'A Comédia teve sua origem na Grécia antiga por volta do século V a.C, era ligada às festas religiosas da época em homenagem ao Deus Dionísio. Nessas festas, tinha procissões e apresentações que misturavam dança, música e sátira o que deu origem ao gênero, A palavra “Comédia” vem do grego kōmōidía que pode ser traduzido como “Canto Festivo”.',
+    image: './assets/images/charlie-chaplin.webp'
 };
 
 const HomePage = () => {
@@ -23,7 +23,7 @@ const HomePage = () => {
     return <>
 
         <div className="w-full flex flex-col gap-5 p-5 bg-gradient-to-b from-stone-900 from-5% to-transparent to-95% fixed z-20">
-            <Header />
+            <Header page={'› Home'}/>
         </div>
         <main className="w-full h-fit relative">
 
@@ -31,19 +31,19 @@ const HomePage = () => {
                 <Slideshow />
             </div>
                 
-            <section className="flex relative bg-center bg-fixed bg-cover bg-no-repeat" style={{ backgroundImage: "url('./assets/images/Wallpaper.webp')" }}>
-                <InfoCards content={contentCardIntro} className={' text-black'}/>
+            <section className="flex relative bg-center bg-fixed bg-cover bg-no-repeat" >
+                <InfoCards content={contentCardIntro}/>
             </section>
                     
             <TopicDiv title={'GÊNERO'}/>
 
             <section id="genero" className="flex relative bg-center bg-fixed bg-cover bg-no-repeat" style={{ backgroundImage: "url('./assets/images/Wallpaper.webp')" }}>
-                <InfoCards content={contentCardGen} className={' text-black'}/>
+                <InfoCards content={contentCardGen}/>
             </section>
 
             <TopicDiv title={'FILMES'}/>
 
-            <section className="w-full h-fit flex flex-col items-center justify-start gap-5">
+            <section id="filmes" className="w-full h-fit flex flex-col items-center justify-start gap-5">
                 <MovieSlideshow />
             </section>
 

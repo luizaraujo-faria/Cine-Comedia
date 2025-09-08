@@ -4,18 +4,9 @@ import { images } from '../../../public/assets/importAssets.js'
 const { Banner1, BannerGG, BannerAV } = images;
 
 const slides = [
-  {
-    id: 1,
-    src: Banner1
-  },
-  {
-    id: 2,
-    src: BannerGG
-  },
-  {
-    id: 3,
-    src: BannerAV
-  },
+  {id: 1, src: Banner1},
+  {id: 2, src: ''},
+  {id: 3, src: ''}
 ];
 
 const Slideshow = () => {
@@ -32,8 +23,8 @@ const Slideshow = () => {
   const goToSlide = (index) => setCurrent(index);
 
   return (
-    <section className="relative w-full h-100 bg-secondary overflow-hidden shadow-md shadow-stone-600 lg:h-screen">
-        {/* Slides */}
+    <section className="relative w-full h-100 bg-secondary overflow-hidden lg:h-screen">
+
         <div className="flex transition-transform duration-700 ease-in-out"style={{ transform: `translateX(-${current * 100}%)` }}>
 
             {slides.map((slide) => (
@@ -47,11 +38,9 @@ const Slideshow = () => {
             ))}
         </div>
 
-        {/* Controles */}
         <button onClick={prevSlide} className="absolute text-5xl bottom-1/4 left-8 cursor-pointer hover:text-primary -translate-y-1/2 text-white rounded-full">‹</button>
         <button onClick={nextSlide} className="absolute text-5xl bottom-1/4 right-8 cursor-pointer hover:text-primary -translate-y-1/2 text-white rounded-full">›</button>
 
-        {/* Indicadores */}
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
             {slides.map((_, index) => (
             <button key={index} onClick={() => goToSlide(index)} className={`w-7 h-1 shadow-black shadow-2xl cursor-pointer hover:bg-primary ${current === index ? "bg-primary" : "bg-white"}`}/>

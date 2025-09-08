@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import MenuBar from './MenuBar';
 
-const Header = () => {
+const Header = ({ page }) => {
 
     const [menuStatus, setMenuStatus] = useState('inactive');
 
@@ -15,7 +15,7 @@ const Header = () => {
             <div id="menu-line"className={`w-full h-0.5 transition-all duration-75 bg-black ${menuStatus === 'active' ? 'invisible before:visible before:rotate-[43deg] before:top-2/4 after:visible after:bottom-2/5 after:rotate-[-43deg]' : 'visible'} before:transition-all before:duration-300 before:content-[""] before:absolute before:w-full before:h-0.5 before:bg-black before:top-0 after:transition-all after:duration-300 after:content-[""] after:absolute after:w-full after:h-0.5 after:bg-black after:bottom-0`}></div>
         </menu>
 
-        <h1 className="text-2xl font-anton lg:text-4xl lg:tracking-wide">Cine Comédia</h1>
+        <h1 className="text-2xl font-anton flex items-center justify-center gap-5 lg:text-4xl lg:tracking-wide">Cine Comédia <span className='text-2xl font-afacad'>{page}</span></h1>
     </header>
 }
 

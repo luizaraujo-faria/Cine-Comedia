@@ -45,35 +45,43 @@ const MenuBar = ({ className }) => {
                   <path fillRule="evenodd" d="M9.293 2.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 17 11h-1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6H3a1 1 0 0 1-.707-1.707l7-7Z" clipRule="evenodd" />
                 </svg>
 
-                <Link className='text-2xl font-light transition-all duration-300 group-active:ml-5 group-hover:ml-1'>Início</Link>
+                <Link to='/' className='text-2xl font-light transition-all duration-300 group-active:ml-5 group-hover:ml-1'>Início</Link>
             </li>
             <li className='text-2xl font-normal flex items-center justify-center gap-5 group'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="size-5 transition-all duration-300 group-active:size-6 group-active:text-primary group-hover:size-6 group-hover:text-primary"> 
                   <path d="M15.98 1.804a1 1 0 0 0-1.96 0l-.24 1.192a1 1 0 0 1-.784.785l-1.192.238a1 1 0 0 0 0 1.962l1.192.238a1 1 0 0 1 .785.785l.238 1.192a1 1 0 0 0 1.962 0l.238-1.192a1 1 0 0 1 .785-.785l1.192-.238a1 1 0 0 0 0-1.962l-1.192-.238a1 1 0 0 1-.785-.785l-.238-1.192ZM6.949 5.684a1 1 0 0 0-1.898 0l-.683 2.051a1 1 0 0 1-.633.633l-2.051.683a1 1 0 0 0 0 1.898l2.051.684a1 1 0 0 1 .633.632l.683 2.051a1 1 0 0 0 1.898 0l.683-2.051a1 1 0 0 1 .633-.633l2.051-.683a1 1 0 0 0 0-1.898l-2.051-.683a1 1 0 0 1-.633-.633L6.95 5.684ZM13.949 13.684a1 1 0 0 0-1.898 0l-.184.551a1 1 0 0 1-.632.633l-.551.183a1 1 0 0 0 0 1.898l.551.183a1 1 0 0 1 .633.633l.183.551a1 1 0 0 0 1.898 0l.184-.551a1 1 0 0 1 .632-.633l.551-.183a1 1 0 0 0 0-1.898l-.551-.184a1 1 0 0 1-.633-.632l-.183-.551Z" />
                 </svg>
 
-                <Link className='text-2xl font-light transition-all duration-300 group-active:ml-5 group-hover:ml-1'>Gênero</Link>
+                <Link to='/#genero' className='text-2xl font-light transition-all duration-300 group-active:ml-5 group-hover:ml-1'>Gênero</Link>
             </li>
             <li className='text-2xl font-normal flex items-center justify-center gap-5 group'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="size-5 transition-all duration-300 group-active:size-6 group-active:text-primary group-hover:size-6 group-hover:text-primary">
                   <path d="M3.25 4A2.25 2.25 0 0 0 1 6.25v7.5A2.25 2.25 0 0 0 3.25 16h7.5A2.25 2.25 0 0 0 13 13.75v-7.5A2.25 2.25 0 0 0 10.75 4h-7.5ZM19 4.75a.75.75 0 0 0-1.28-.53l-3 3a.75.75 0 0 0-.22.53v4.5c0 .199.079.39.22.53l3 3a.75.75 0 0 0 1.28-.53V4.75Z" />
                 </svg>
 
-                <Link className='text-2xl font-light transition-all duration-300 group-active:ml-5 group-hover:ml-1'>Filmes</Link>
+                <Link to='/#filmes' className='text-2xl font-light transition-all duration-300 group-active:ml-5 group-hover:ml-1'>Filmes</Link>
             </li>
             <li className='text-2xl font-normal flex items-center justify-center gap-5 group'>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="size-5 transition-all duration-300 group-active:size-6 group-active:text-primary group-hover:size-6 group-hover:text-primary">
                 <path fillRule="evenodd" d="M1 4.75C1 3.784 1.784 3 2.75 3h14.5c.966 0 1.75.784 1.75 1.75v10.515a1.75 1.75 0 0 1-1.75 1.75h-1.5c-.078 0-.155-.005-.23-.015H4.48c-.075.01-.152.015-.23.015h-1.5A1.75 1.75 0 0 1 1 15.265V4.75Zm16.5 7.385V11.01a.25.25 0 0 0-.25-.25h-1.5a.25.25 0 0 0-.25.25v1.125c0 .138.112.25.25.25h1.5a.25.25 0 0 0 .25-.25Zm0 2.005a.25.25 0 0 0-.25-.25h-1.5a.25.25 0 0 0-.25.25v1.125c0 .108.069.2.165.235h1.585a.25.25 0 0 0 .25-.25v-1.11Zm-15 1.11v-1.11a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25v1.125a.25.25 0 0 1-.164.235H2.75a.25.25 0 0 1-.25-.25Zm2-4.24v1.125a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25V11.01a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25Zm13-2.005V7.88a.25.25 0 0 0-.25-.25h-1.5a.25.25 0 0 0-.25.25v1.125c0 .138.112.25.25.25h1.5a.25.25 0 0 0 .25-.25ZM4.25 7.63a.25.25 0 0 1 .25.25v1.125a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25V7.88a.25.25 0 0 1 .25-.25h1.5Zm0-3.13a.25.25 0 0 1 .25.25v1.125a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25V4.75a.25.25 0 0 1 .25-.25h1.5Zm11.5 1.625a.25.25 0 0 1-.25-.25V4.75a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25v1.125a.25.25 0 0 1-.25.25h-1.5Zm-9 3.125a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Z" clipRule="evenodd" />
               </svg>
 
-                <Link className='text-2xl font-light transition-all duration-300 group-active:ml-5 group-hover:ml-1'>Gente Grande</Link>
+                <Link to='/gentegrande' className='text-2xl font-light transition-all duration-300 group-active:ml-5 group-hover:ml-1'>Gente Grande</Link>
             </li>
             <li className='text-2xl font-normal flex items-center justify-center gap-5 group'>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="size-5 transition-all duration-300 group-active:size-6 group-active:text-primary group-hover:size-6 group-hover:text-primary">
                 <path fillRule="evenodd" d="M1 4.75C1 3.784 1.784 3 2.75 3h14.5c.966 0 1.75.784 1.75 1.75v10.515a1.75 1.75 0 0 1-1.75 1.75h-1.5c-.078 0-.155-.005-.23-.015H4.48c-.075.01-.152.015-.23.015h-1.5A1.75 1.75 0 0 1 1 15.265V4.75Zm16.5 7.385V11.01a.25.25 0 0 0-.25-.25h-1.5a.25.25 0 0 0-.25.25v1.125c0 .138.112.25.25.25h1.5a.25.25 0 0 0 .25-.25Zm0 2.005a.25.25 0 0 0-.25-.25h-1.5a.25.25 0 0 0-.25.25v1.125c0 .108.069.2.165.235h1.585a.25.25 0 0 0 .25-.25v-1.11Zm-15 1.11v-1.11a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25v1.125a.25.25 0 0 1-.164.235H2.75a.25.25 0 0 1-.25-.25Zm2-4.24v1.125a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25V11.01a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25Zm13-2.005V7.88a.25.25 0 0 0-.25-.25h-1.5a.25.25 0 0 0-.25.25v1.125c0 .138.112.25.25.25h1.5a.25.25 0 0 0 .25-.25ZM4.25 7.63a.25.25 0 0 1 .25.25v1.125a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25V7.88a.25.25 0 0 1 .25-.25h1.5Zm0-3.13a.25.25 0 0 1 .25.25v1.125a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25V4.75a.25.25 0 0 1 .25-.25h1.5Zm11.5 1.625a.25.25 0 0 1-.25-.25V4.75a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25v1.125a.25.25 0 0 1-.25.25h-1.5Zm-9 3.125a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Z" clipRule="evenodd" />
               </svg>
 
-                <Link className='text-2xl font-light transition-all duration-300 group-active:ml-5 group-hover:ml-1'>Ace Ventura</Link>
+                <Link to='/aceventura' className='text-2xl font-light transition-all duration-300 group-active:ml-5 group-hover:ml-1'>Ace Ventura</Link>
+            </li>
+
+            <li className='text-2xl font-normal flex items-center justify-center gap-5 group'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-5 transition-all duration-300 group-active:size-6 group-active:text-primary group-hover:size-6 group-hover:text-primary">
+                  <path d="M12 2C6.48 2 2 6.03 2 11c0 4.21 3.4 7.68 7.8 8.65v1.6c0 .41.34.75.75.75h3c.41 0 .75-.34.75-.75v-1.6c1.09-.24 2.12-.68 3.01-1.31 1.67-1.18 2.69-2.95 2.69-5.34 0-4.97-4.48-9-10-9zm0 13c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm1.1-3.87v.62c0 .41-.34.75-.75.75s-.75-.34-.75-.75v-.82c0-.45.26-.86.66-1.05.58-.27.94-.71.94-1.19 0-.83-.82-1.5-1.85-1.5-1.01 0-1.83.67-1.83 1.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-1.64 1.57-3 3.58-3 2.02 0 3.6 1.36 3.6 3.05 0 1.18-.77 2.24-1.9 2.64z" />
+                </svg>
+
+                <Link to="/quiz" className='text-2xl font-light transition-all duration-300 group-active:ml-5 group-hover:ml-1'>Quiz</Link>
             </li>
         </ul>
 
