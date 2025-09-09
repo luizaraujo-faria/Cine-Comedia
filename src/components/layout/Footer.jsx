@@ -72,8 +72,8 @@ const Footer = () => {
             </article>
         </section>
 
-        <section className='w-full h-40 flex items-end justify-center bg-secondary lg:h-75'>
-            <h6 className='text-7xl text-neutral-950 transition-all duration-1000 cursor-pointer hover:text-primary font-anton lg:text-[17rem] leading-[15rem]'>CINECOMÉDIA</h6>
+        <section className='w-full h-40 flex items-end justify-center bg-secondary lg:h-75 2xl:h-90' >
+            <h6 className='text-7xl text-neutral-950 transition-all duration-1000 cursor-pointer font-anton lg:text-[17rem] leading-[15rem] 2xl:text-[24rem] 2xl:leading-[22rem]'>CINECOMEDIA</h6>
         </section>
 
     </footer>

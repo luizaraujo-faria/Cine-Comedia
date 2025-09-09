@@ -47,10 +47,10 @@ const AceVenturaPage = () => {
 
                 <div class="relative flex flex-col items-center justify-center h-full w-full ">
 
-                    <h1 class="w-full h-full absolute bottom-0 pb-48 pl-18 leading-28 flex items-end justify-start text-[11rem] font-extrabold text-transparent bg-clip-text bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("./assets/images/Banner-AV.webp")' }}>
+                    <h1 class="w-full h-full absolute bottom-0 pb-48 pl-18 leading-28 flex items-end justify-start text-[11rem] 2xl:text-[15rem] 2xl:pb-60 font-extrabold text-transparent bg-clip-text bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("./assets/images/Banner-AV.webp")' }}>
                     ACE
                     </h1>
-                    <h1 class="w-full h-full absolute bottom-0 pb-18 pl-18 leading-28 flex items-end justify-start text-[11rem] font-extrabold text-transparent bg-clip-text bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("./assets/images/Banner-AV.webp")' }}>
+                    <h1 class="w-full h-full absolute bottom-0 pb-18 pl-18 leading-28 flex items-end justify-start text-[11rem] 2xl:text-[15rem] font-extrabold text-transparent bg-clip-text bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("./assets/images/Banner-AV.webp")' }}>
                     VENTURA
                     </h1>
                 </div>
@@ -61,11 +61,11 @@ const AceVenturaPage = () => {
             </section>
 
             
-            <section className="w-full h-[60vh] flex items-center justify-center bg-top bg-cover bg-no-repeat relative overflow-hidden" style={{ backgroundImage: 'url("./assets/images/Banner-AV-2.webp")' }}>
+            <section className="w-full h-[50vh] flex items-center justify-center bg-top bg-cover bg-no-repeat relative overflow-hidden" style={{ backgroundImage: 'url("./assets/images/Banner-AV-2.webp")' }}>
                 <div class="absolute inset-0 bg-black/85" ></div>
             
                 <div class="relative flex flex-col items-center justify-center h-full w-full ">
-                    <h1 class="w-full h-full leading-28 flex items-center justify-center text-[9rem] font-extrabold text-transparent bg-clip-text bg-cover bg-top bg-no-repeat" style={{ backgroundImage: 'url("./assets/images/Banner-AV-2.webp")' }}>
+                    <h1 class="w-full h-full leading-28 flex items-center justify-center text-[9rem] 2xl:text-[11rem] font-extrabold text-transparent bg-clip-text bg-cover bg-top bg-no-repeat" style={{ backgroundImage: 'url("./assets/images/Banner-AV-2.webp")' }}>
                     ACE VENTURA 2
                     </h1>
                 </div>

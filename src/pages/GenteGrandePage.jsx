@@ -25,7 +25,7 @@ const contentCuriosidades = {
 };
 
 const atoresGenteGrande = [
-    { name: '1', image: '', about: 'Shaolin' },
+    { name: '1', image: '', about: 'Adam Sandler' },
     { name: '2', image: '', about: 'Shaolin' },
     { name: '3', image: '', about: 'Shaolin' },
     { name: '4', image: '', about: 'Shaolin' },
@@ -49,10 +49,10 @@ const GenteGrandePage = () => {
                     {/* <h1 class="w-full h-full pb-10 leading-0 flex items-center justify-center text-[11rem] font-extrabold text-transparent bg-clip-text bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("./assets/images/Banner-GG.webp")' }}>
                     GENTE GRANDE
                     </h1> */}
-                    <h1 class="w-full h-full absolute bottom-0 pb-48 pl-18 leading-28 flex items-end justify-start text-[11rem] font-extrabold text-transparent bg-clip-text bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("./assets/images/Banner-GG.webp")' }}>
+                    <h1 class="w-full h-full absolute bottom-0 pb-48 pl-18 leading-28 flex items-end justify-start text-[11rem] 2xl:text-[15rem] 2xl:pb-60 font-extrabold text-transparent bg-clip-text bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("./assets/images/Banner-GG.webp")' }}>
                     GENTE
                     </h1>
-                    <h1 class="w-full h-full absolute bottom-0 pb-18 pl-18 leading-28 flex items-end justify-start text-[11rem] font-extrabold text-transparent bg-clip-text bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("./assets/images/Banner-GG.webp")' }}>
+                    <h1 class="w-full h-full absolute bottom-0 pb-18 pl-18 leading-28 flex items-end justify-start text-[11rem] 2xl:text-[15rem] font-extrabold text-transparent bg-clip-text bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("./assets/images/Banner-GG.webp")' }}>
                     GRANDE
                     </h1>
                 </div>
@@ -62,11 +62,11 @@ const GenteGrandePage = () => {
                 <InfoCards content={contentGenteGrande} className={'hidden'}/>
             </section>
 
-            <section className="w-full h-[60vh] flex items-center justify-center bg-top bg-cover bg-no-repeat relative overflow-hidden" style={{ backgroundImage: 'url("./assets/images/Banner-GG-2.webp")' }}>
+            <section className="w-full h-[50vh] flex items-center justify-center bg-top bg-cover bg-no-repeat relative overflow-hidden" style={{ backgroundImage: 'url("./assets/images/Banner-GG-2.webp")' }}>
                 <div class="absolute inset-0 bg-black/85" ></div>
 
                 <div class="relative flex flex-col items-center justify-center h-full w-full ">
-                    <h1 class="w-full h-full leading-28 flex items-center justify-center text-[9rem] font-extrabold text-transparent bg-clip-text bg-cover bg-top bg-no-repeat" style={{ backgroundImage: 'url("./assets/images/Banner-GG-2.webp")' }}>
+                    <h1 class="w-full h-full leading-28 flex items-center justify-center text-[9rem] 2xl:text-[11rem] font-extrabold text-transparent bg-clip-text bg-cover bg-top bg-no-repeat" style={{ backgroundImage: 'url("./assets/images/Banner-GG-2.webp")' }}>
                     GENTE GRANDE 2
                     </h1>
                 </div>
@@ -85,7 +85,7 @@ const GenteGrandePage = () => {
             <TopicDiv title={'ATORES'} />
 
             <section>
-                <CardAtores atores={atoresGenteGrande}/>
+                <CardAtores atores={atoresGenteGrande} />
             </section>
 
         </main>

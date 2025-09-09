@@ -7,9 +7,9 @@ const InfoCards = ({ content, className }) => {
 
             <article className="w-full flex flex-col items-center justify-start gap-10 shadow-neutral-500 shadow-[2px_5px_10px] bg-white/95 md:items-start md:w-4/5 lg:h-fit lg:pt-16 xl:p-5 xl:w-[95%] rounded-sm">
 
-                <h3 className="text-2xl text-primary font-anton lg:text-5xl">{ title }</h3>
+                <h3 className="text-2xl text-primary font-anton lg:text-5xl 2xl:text-7xl">{ title }</h3>
 
-                <div className="text-justify text-xl text-black flex flex-col gap-3">
+                <div className="text-justify text-xl text-black flex flex-col gap-3 2xl:text-3xl">
                     <p>{text}</p>
                     <p>{text2}</p>
                     <p>{text3}</p>
