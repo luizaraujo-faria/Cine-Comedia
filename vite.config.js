@@ -8,5 +8,6 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: '/Cine-Comedia/'
+  base: '/' // deploy para a vercel
+  // base: '/Cine-Comedia/' - deploy para o github pages
 })
