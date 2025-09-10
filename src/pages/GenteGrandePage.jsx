@@ -25,12 +25,13 @@ const contentCuriosidades = {
 };
 
 const atoresGenteGrande = [
-    { name: '1', image: '', about: 'Adam Sandler' },
-    { name: '2', image: '', about: 'Shaolin' },
-    { name: '3', image: '', about: 'Shaolin' },
-    { name: '4', image: '', about: 'Shaolin' },
-    { name: '5', image: '', about: 'Shaolin' },
-    { name: '6', image: '', about: 'Shaolin' }
+    { name: 'Adam Sandler', image: '../../assets/images/AdamS.webp', about: 'Ator, roteirista, diretor e comediante. Começou no stand-up e ganhou destaque no Saturday Night Live. Fundou a produtora Happy Madison Productions, nome inspirada em seus filmes Happy Gilmore e Billy Madison.' },
+    { name: 'Kevin James', image: '../../assets/images/Kevin.webp', about: 'Ator, roteirista, produtor e dublador. Descobriu a paixão pela comédia na universidade e começou em clubes de improviso. Ficou famoso por The King of Queens, que durou nove temporadas.' },
+    { name: 'Christopher Julius Rock', image: '../../assets/images/ChrisR.webp', about: 'Comediante, ator, roteirista e cineasta. Ganhou destaque no Saturday Night Live e criou a sitcom Todo Mundo Odeia o Chris, baseada em sua adolescência.' },
+    { name: 'Robert Michael Schneider ', image: '../../assets/images/RobertM.webp', about: 'Ator, comediante, roteirista e cineasta. Começou no stand-up, participou do Saturday Night Live e estrelou comédias de sucesso. É amigo de Adam Sandler e pai da cantora Elle King.' },
+    { name: 'Salma Hayek', image: '../../assets/images/DavidW.webp', about: 'Comediante, ator e roteirista. Destacou-se no Saturday Night Live e em filmes como Tommy Boy e Joe Dirt. Também dublou personagens como Kuzco e Griffin, e ganhou sua estrela na Calçada da Fama em 2003.' },
+    { name: 'Maria Elaina Bello', image: '../../assets/images/MariaE.webp', about: 'Atriz, produtora e diretora mexicana. Ganhou destaque em Hollywood com Desperado e Frida, pelo qual foi indicada ao Oscar. Também produziu a série Ugly Betty e é reconhecida por seu engajamento social.' },
+    { name: 'Nick Swardson', image: '../../assets/images/NickS.webp', about: 'Atriz e produtora americana. Destacou-se em filmes como The Cooler e A History of Violence, e em séries como ER e NCIS.' }
 ];
 
 const GenteGrandePage = () => {

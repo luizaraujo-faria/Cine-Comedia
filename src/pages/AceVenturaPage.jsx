@@ -25,12 +25,13 @@ const contentCuriosidades = {
 };
 
 const atoresAceVentura = [
-    { name: '1', image: '', about: 'Shaolin' },
-    { name: '2', image: '', about: 'Shaolin' },
-    { name: '3', image: '', about: 'Shaolin' },
-    { name: '4', image: '', about: 'Shaolin' },
-    { name: '5', image: '', about: 'Shaolin' },
-    { name: '6', image: '', about: 'Shaolin' }
+    { name: 'Courteney Cox', image: '../../assets/images/Courtney.webp', about: 'Atriz americana. Ganhou destaque como Monica em Friends e interpretou Melissa em Ace Ventura, além de participar da franquia de terror Pânico.' },
+    { name: 'Sean Young', image: '../../assets/images/SeanY.webp', about: 'Atriz americana. Ficou famosa nos anos 80 com Blade Runner e Sem Saída. Em Ace Ventura, vive a tenente Einhorn, chefe da polícia com um segredo revelador.' },
+    { name: 'Tone Loc', image: '../../assets/images/ToneL.webp', about: 'Rapper, cantor e ator americano. Conhecido pelos hits “Wild Thing” e “Funky Cold Medina”, interpreta Emílio em Ace Ventura, amigo policial que ajuda nas investigações.' },
+    { name: 'Dan Marino', image: '../../assets/images/DanM.webp', about: 'Ex-quarterback da NFL pelo Miami Dolphins. Aparece em Ace Ventura interpretando a si mesmo, trazendo autenticidade esportiva e conexão com o futebol americano.' },
+    { name: 'Ian McNeise', image: '../../assets/images/IamMc.webp', about: 'Ator britânico de teatro e cinema. Em Ace Ventura 2, interpreta Fulton Greenwall, homem que busca a ajuda de Ace para localizar o morcego sagrado.' },
+    { name: 'Jim Carrey', image: '../../assets/images/JimC.webp', about: 'Ator, comediante e dublador canadense. Ficou famoso com Ace Ventura, O Máskara e O Grinch, começando no stand-up na década de 1980 e se tornando ícone do humor físico e irreverente.' },
+    { name: 'Simon Callow', image: '../../assets/images/SimonC.webp', about: 'Ator, escritor e diretor britânico. Interpreta o vilão Vincent Cadboy em Ace Ventura 2, responsável por conspirar contra tribos rivais na África.' }
 ];
 
 const AceVenturaPage = () => {
