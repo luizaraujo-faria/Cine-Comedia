@@ -33,7 +33,7 @@ const MovieSlideshow = () => {
     return (
         <div className="w-full h-140 overflow-hidden relative flex flex-col items-start justify-around p-5 md:grid md:grid-cols-2 md:place-items-center xl:h-screen xl:w-[95%] 2xl:h-[80vh] bg-center bg-cover bg-fixed bg-no-repeat" style={{ backgroundImage: 'url("./assets/images/Wallpaper.webp")' }}>
 
-            <div className="w-2/4 md:w-full md:h-screen md:flex md:items-center md:justify-center overflow-hidde 2xl:w-fit 2xl:h-fit bg-pink-200">
+            <div className="w-2/4 md:w-full md:h-screen md:flex md:items-center md:justify-center overflow-hidde 2xl:w-fit 2xl:h-fit">
               <img src={slides[current].image} alt={slides[current].title} className="w-full shadow-neutral-500 shadow-[2px_5px_10px] bg-amber-200 object-cover rounded-sm md:h-3/4 lg:h-5/6 lg:w-3/4 xl:w-3/5 2xl:w-110 2xl:h-150"/>
             </div>
 

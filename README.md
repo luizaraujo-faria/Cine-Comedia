@@ -44,7 +44,9 @@ atrair e entreter o público amante da comédia nos cinemas.
     ├── pages/ - Páginas de navegação.
 
     ├── App.jsx
+  
     ├── main.jsx
+  
     ├── style.css
 
 .gitignore - Indica arquivos a serem ignorados pelo git.
