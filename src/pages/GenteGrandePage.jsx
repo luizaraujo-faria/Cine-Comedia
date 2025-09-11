@@ -21,7 +21,8 @@ const contentGenteGrande2 = {
 const contentCuriosidades = {
     title: 'Curiosidades - Gente Grande',
     text: 'Durante as filmagens de Gente Grande, Maya Rudolph estava grávida e isso foi incluído no roteiro. Os executivos não queriam Salma Hayek no elenco, mas Adam Sandler defendeu sua participação. Com o sucesso, Sandler ainda presenteou os colegas protagonistas com carros Maserati de US$200 mil.',
-    text2: 'Na continuação, Gente Grande 2, Rob Schneider não retornou ao papel de Rob Hilliard por conflitos de agenda. O longa foi ambientado na cidade natal de Sandler, Manchester, em New Hampshire, e contou com várias participações especiais, como Shaquille O’Neal, Stone Cold Steve Austin e Taylor Lautner.'
+    text2: 'Na continuação, Gente Grande 2, Rob Schneider não retornou ao papel de Rob Hilliard por conflitos de agenda. O longa foi ambientado na cidade natal de Sandler, Manchester, em New Hampshire, e contou com várias participações especiais, como Shaquille O’Neal, Stone Cold Steve Austin e Taylor Lautner.',
+    image: './assets/images/genteGrande.webp'
 };
 
 const atoresGenteGrande = [

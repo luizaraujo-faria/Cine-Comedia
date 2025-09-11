@@ -21,7 +21,8 @@ const contentAceVentura2 = {
 const contentCuriosidades = {
     title: 'Curiosidades - Ace Ventura',
     text: 'O papel de protagonista foi proposto a Rick Moranis, Judd Nelson ou Whoopi Goldberg, mas só Carrey aceitou a proposta e ajudou a reescrever o roteiro, como a participação do Cannibal Corse foi escolha de Carrey, e eles até tiveram cronograma alterado para filmarem.',
-    text2: 'Ao contrário do primeiro filme, que se passou em Miami, a sequência foi gravada em áreas naturais da África e em recriações de estúdio, trazendo mais desafios para a equipe e o elenco. Jim Carrey recebeu um cachê de US$15 milhões, tornando-se um dos atores mais bem pagos dos anos 90.'
+    text2: 'Ao contrário do primeiro filme, que se passou em Miami, a sequência foi gravada em áreas naturais da África e em recriações de estúdio, trazendo mais desafios para a equipe e o elenco. Jim Carrey recebeu um cachê de US$15 milhões, tornando-se um dos atores mais bem pagos dos anos 90.',
+    image: './assets/images/aceVentura.webp'
 };
 
 const atoresAceVentura = [

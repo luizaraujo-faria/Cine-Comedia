@@ -8,7 +8,7 @@ import TopicDiv from "../components/ui/TopicDiv";
 const contentCardIntro = {
     title: 'Amante da comédia',
     text: 'Cine Comédia – O lugar onde o riso é sempre o protagonista! Dos clássicos inesquecíveis às estreias mais hilárias, aqui você encontra um universo feito para quem ama gargalhar Se a vida já é séria demais, dê o play e descubra sua nova dose diária de diversão!',
-    image: 'path_da_imagem'
+    image: './assets/images/cineComediaimg.webp'
 };
 
 const contentCardGen = {
