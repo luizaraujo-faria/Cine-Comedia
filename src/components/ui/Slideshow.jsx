@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { images } from '../../../public/assets/importAssets.js'
 
-const { Banner1, BannerGG, BannerAV } = images;
+const { Banner1, Banner2, Banner3 } = images;
 
 const slides = [
   {id: 1, src: Banner1},
-  {id: 2, src: ''},
-  {id: 3, src: ''}
+  {id: 2, src: Banner2},
+  {id: 3, src: Banner3}
 ];
 
 const Slideshow = () => {
